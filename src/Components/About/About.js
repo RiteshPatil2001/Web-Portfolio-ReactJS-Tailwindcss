@@ -78,7 +78,7 @@ const About = () => {
             </label>
           </div>
           <h2 className="pt-32 pb-8 text-center">Profesional Skillset</h2>
-          <div className="grid grid-cols-5 gap-x-5 gap-y-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
             <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
               <img src={Java} alt="java" className="size-32" />
               <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
@@ -161,7 +161,7 @@ const About = () => {
             </div>
           </div>
           <h2 className="pt-32 text-center pb-8">Tools I Used</h2>
-          <div className="grid grid-cols-5 gap-x-5 gap-y-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
             <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
               <img src={PowerBI} alt="java" className="size-32" />
               <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">

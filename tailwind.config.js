@@ -8,6 +8,7 @@ module.exports = {
       color: {
         gold: '#FFD700', // Adds a new `font-display` class
       },
+      
     },
   },
   plugins: [],

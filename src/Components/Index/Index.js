@@ -60,32 +60,32 @@ const Index = () => {
         </div>
         <div className='Container3'>
           <h1 className='OuterClassC3'>You Can <label className='InnerClass'>Connect</label> with me</h1>
-          <div className='ConnectContainer'>
-            <div className='stack1'>
-              <div className='Stackcard1'>
-                <div className='Stackcard2'>
-                  <div className='Stackcard3' onClick={GitHubClick}>
-                    <img src={Github} alt="github pic" className="img-connect" />
+          <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center'>
+            <div className='w-fit flex place-content-around'>
+              <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
+                <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
+                  <div className=' w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white' onClick={GitHubClick}>
+                    <img src={Github} alt="github pic" className="flex m-auto w-44 h-44 mt-2" />
                     <h2>GitHub</h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='stack1'>
-              <div className='Stackcard1'>
-                <div className='Stackcard2'>
-                  <div className='Stackcard3' onClick={LinkedinClick}>
-                    <img src={Linkedin} alt="linkedin pic" className="img-connect" />
+            <div className='w-fit'>
+              <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
+                <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
+                  <div className=' w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white' onClick={LinkedinClick}>
+                    <img src={Linkedin} alt="linkedin pic" className="flex m-auto w-44 h-44 mt-2" />
                     <h2>Linkedin</h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='stack1'>
-              <div className='Stackcard1'>
-                <div className='Stackcard2'>
-                  <div className='Stackcard3' onClick={MailClick}>
-                    <img src={Mail} alt="mail pic" className="img-connect" />
+            <div className='w-fit'>
+              <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
+                <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
+                  <div className=' w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white' onClick={MailClick}>
+                    <img src={Mail} alt="mail pic" className="flex m-auto w-44 h-44 mt-2" />
                     <h2>Mail</h2>
                   </div>
                 </div>
