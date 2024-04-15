@@ -1,9 +1,9 @@
 import './App.css';
-import Index from '../src/Components/Index/Index';
-import Projects from '../src/Components/Projects/Projects'
-import About from '../src/Components/About/About'
-import Resume from '../src/Components/Resume/Resume'
-import Certificates from '../src/Components/Certificates/Certificates'
+import Index from './Pages/Index';
+import Projects from './Pages/Projects';
+import About from './Pages/About';
+import Resume from './Pages/Resume';
+import Certificates from './Pages/Certificates';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
