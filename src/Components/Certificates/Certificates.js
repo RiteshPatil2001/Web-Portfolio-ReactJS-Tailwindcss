@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Certificates.css";
 import IBMPython from "../../Assests/IBMPython.png";
 import OracleCertificate from "../../Assests/OracleCertificate.png";
 import GoogleCertificate from "../../Assests/GoogleCertificate.jpg";
 import Header from "../Header/Navbar";
 import Footer from "../Footer/Footer";
+import { useNavigate } from 'react-router-dom';
 
 const Certificates = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const unlisten = () => {
+      window.scrollTo(0, 0);
+    };
+    navigate({ unlisten });
+    return () => {
+      navigate({ unlisten: undefined });
+    };
+  }, [navigate]);
+
   return (
     <>
       <Header />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './Index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import homeLogo from '../../Assests/Homee.png'
@@ -8,8 +8,22 @@ import Linkedin from '../../Assests/Linkedin.png'
 import Mail from '../../Assests/Mail.png';
 import Header from '../Header/Navbar'
 import Footer from '../Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Index = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const unlisten = () => {
+      window.scrollTo(0, 0);
+    };
+    navigate({ unlisten });
+    return () => {
+      navigate({ unlisten: undefined });
+    };
+  }, [navigate]);
+
+
   const GitHubClick = () => {
     window.open('https://github.com/RiteshPatil2001', '_blank');
   };
@@ -23,45 +37,43 @@ const Index = () => {
   };
   return (
     <>
-    <div className="Wrapper">
       <Header />
-      <div className='FaceContent'>
-        <div className='Container1'>
-          <div className='TextContainer'>
-            <label className='FirstLine'>Hii There !!! </label><span className="wave" role="img" aria-labelledby="wave"> 👋 </span>
-            <h1 className="heading-name">I'M<strong className="main-name"> RITESH PATIL</strong></h1>
-            <div class="InnerContainer">
-              <div class="c2"><div class="typed-out">Full Stack Devloper & Data Scientist &nbsp; &nbsp; &nbsp;</div></div>
+      <div className='w-full p-16 justify-center pb-28'>
+        <div className='flex'>
+          <div className='w-7/12 pt-[22%] text-white text-3xl'>
+            <label className='FirstLine'>Hii There !!! </label><span className="wave inline-block" role="img" aria-labelledby="wave"> 👋 </span>
+            <h1 className="text-white text-[4rem] font-[750] leading-[1em] uppercase">I'M<strong className="main-name text-white font-[800] leading-[1em]"> RITESH PATIL</strong></h1>
+            <div class="inline-block mt-[5%]">
+              <div class="inline-block"><div class="typed-out overflow-hidden border-r-4 border-[gold] font-2xl text-[gold] w-0 whitespace-nowrap">Full Stack Devloper & Data Scientist &nbsp; &nbsp; &nbsp;</div></div>
             </div>
           </div>
-          <div className='ImageContainer'>
-            <img src={homeLogo} alt="home pic" className="img-fluid" />
+          <div>
+            <img src={homeLogo} alt="home pic" className="h-[540px]" />
           </div>
         </div>
-        <div className='Container2'>
-          <div className='TextContainer2'>
-            <h1 className='OuterClass'>Let Me <label className='InnerClass'>Introduce</label> Myself</h1>
-            <div className='Introcard'>
-              <label className='OuterClass2'>Passionate developer with a keen eye for detail and a love for creating seamless and innovative solutions.
-                <br></br>
-                <br></br>
-                I have developed proficiency in programming languages such as <label className='InnerClass'>Java, C++, Python and many more</label> along with hands-on experience with it.
-                <br></br>
-                <br></br>
-                <label className='InnerClass'>Data analysis and machine learning</label> are my additional areas of interest.
-                <br></br>
-                <br></br>
-                Whenever I can, I incorporate my passion for <label className='InnerClass'>cricket and swimming</label> which helps me stay physically active.</label>
+
+        <div className='flex mt-28'>
+          <div className='w-8/12'>
+            <h1 className='text-center font-bold uppercase text-5xl	text-white font-sans'>Let Me <label className='text-[gold]'>Introduce</label> Myself</h1>
+            <div className='text-2xl text-justify pt-12 pl-8 pr-16'>
+                <label className='text-white font-sans'>Passionate developer with a keen eye for detail and a love for creating seamless and innovative solutions. I am dedicated to delivering high-quality code and collaborating with cross-functional teams to turn ideas into reality.
+                <br /><br />
+                I have developed proficiency in programming languages such as <text className='text-[gold]'>Java, ReactJs, Python, C++, MERN stack, Tailwind-CSS and many more</text> along with hands-on experience with it.
+                <br /><br />
+                <text className='text-[gold]'>Data analysis and machine learning</text> are my additional areas of interest.
+                <br /><br />
+                Whenever I can, I incorporate my passion for <text className='text-[gold]'>cricket and swimming</text> which helps me stay physically active.
+                </label>
             </div>
           </div>
-          <div className='Logocontainer'>
-            <img src={ritesh} alt="ritesh pic" className="img-fluid2" />
+          <div className='w-4/12 flex justify-center items-center'>
+            <img src={ritesh} alt="ritesh pic" className="h-96 rounded-full cursor-pointer" />
           </div>
         </div>
-        <div className='Container3'>
-          <h1 className='OuterClassC3'>You Can <label className='InnerClass'>Connect</label> with me</h1>
+        <div className='text-center mt-32'>
+          <h1 className='text-center font-bold uppercase text-5xl	text-white font-sans mb-28'>You Can <label className='text-[gold]'>Connect</label> with me</h1>
           <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 justify-items-center'>
-            <div className='w-fit flex place-content-around'>
+            <div className='w-fit cursor-pointer'>
               <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
                 <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
                   <div className=' w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white' onClick={GitHubClick}>
@@ -71,7 +83,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className='w-fit'>
+            <div className='w-fit cursor-pointer'>
               <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
                 <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
                   <div className=' w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white' onClick={LinkedinClick}>
@@ -81,7 +93,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className='w-fit'>
+            <div className='w-fit cursor-pointer'>
               <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
                 <div className='w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]'>
                   <div className=' w-64 h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white' onClick={MailClick}>
@@ -95,7 +107,6 @@ const Index = () => {
         </div>
       </div>
       <Footer />
-    </div>
     </>
   );
 };

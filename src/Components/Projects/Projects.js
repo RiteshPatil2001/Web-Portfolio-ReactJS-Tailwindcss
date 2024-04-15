@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import JavaProject from "../../Assests/JavaProject.png";
@@ -6,8 +6,21 @@ import PythonProject from "../../Assests/WeatherForecasting.png";
 import ReactProject from "../../Assests/ExpenseTracker.png";
 import Header from "../Header/Navbar";
 import Footer from "../Footer/Footer";
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const unlisten = () => {
+      window.scrollTo(0, 0);
+    };
+    navigate({ unlisten });
+    return () => {
+      navigate({ unlisten: undefined });
+    };
+  }, [navigate]);
+
   const FlyEaseProject = () => {
     window.open("https://github.com/RiteshPatil2001", "_blank");
   };

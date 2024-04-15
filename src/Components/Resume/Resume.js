@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Resume.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ResumePNG from "../../Assests/ResumePNG.jpg";
@@ -6,8 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Header from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router-dom';
 
 const Resume = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const unlisten = () => {
+      window.scrollTo(0, 0);
+    };
+    navigate({ unlisten });
+    return () => {
+      navigate({ unlisten: undefined });
+    };
+  }, [navigate]);
+
   const handleDownload = () => {
     const pdfUrl = process.env.PUBLIC_URL + "/Ritesh_Patil_Resume.pdf";
     const link = document.createElement("a");

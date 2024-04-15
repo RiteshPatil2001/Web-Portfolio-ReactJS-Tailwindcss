@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Java from "../../Assests/Java.png";
@@ -20,8 +20,21 @@ import MySQLWorkbench from "../../Assests/MySQLWorkbench.png";
 import CSharp from "../../Assests/Csharp.png";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Navbar";
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const unlisten = () => {
+      window.scrollTo(0, 0);
+    };
+    navigate({ unlisten });
+    return () => {
+      navigate({ unlisten: undefined });
+    };
+  }, [navigate]);
+
   return (
     <>
       <Header />
