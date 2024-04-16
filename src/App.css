@@ -3,6 +3,7 @@
 }
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   background-image: url('https://wallpaperset.com/w/full/8/7/a/25571.jpg');
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .wrapper {

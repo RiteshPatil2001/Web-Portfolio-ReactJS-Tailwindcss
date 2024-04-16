@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import IBMPython from "../Assests/IBMPython.png";
 import OracleCertificate from "../Assests/OracleCertificate.png";
 import GoogleCertificate from "../Assests/GoogleCertificate.jpg";
-import Header from "./Header/Navbar";
-import Footer from "./Footer/Footer";
+import Header from "../Pages/Navbar";
+import Footer from "../Pages/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Certificates = () => {
@@ -22,7 +22,7 @@ const Certificates = () => {
   return (
     <>
       <Header />
-      <div className="w-full phone:p-4 tablet:p-12 laptop:p-16 desktop:p-16 justify-center pb-8 text-center">
+      <div className="w-full phone:p-4 phone:pt-8 tablet:p-12 laptop:p-16 desktop:p-16 justify-center pb-8 text-center">
         <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans">
           My <label className="text-[gold]">Additional Skillset</label>
         </h1>

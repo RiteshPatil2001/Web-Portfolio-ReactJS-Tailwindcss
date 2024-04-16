@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ResumePNG from "../Assests/ResumePNG.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Header from "./Header/Navbar";
-import Footer from "./Footer/Footer";
+import Header from "../Pages/Navbar";
+import Footer from "../Pages/Footer";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
@@ -30,7 +30,7 @@ const Resume = () => {
   return (
     <>
       <Header />
-      <div className="w-full p-8 tablet:p-20 laptop:p-28 desktop:p-28  text-center">
+      <div className="w-full p-8 phone:pt-8 tablet:p-20 laptop:p-28 desktop:p-28  text-center">
         <label
           className="justify-center bg-[gold] text-black font-sans rounded-lg w-fit cursor-pointer hover:scale-90 active:scale-100 phone:p-2 tablet:p-3 laptop:p-6 desktop:p-6 phone:text-lg tablet:text-2xl laptop:text-2xl desktop:text-2xl"
           onClick={handleDownload}

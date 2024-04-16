@@ -4,8 +4,8 @@ import ritesh from "../Assests/Ritesh.jpg";
 import Github from "../Assests/Github.png";
 import Linkedin from "../Assests/Linkedin.png";
 import Mail from "../Assests/Mail.png";
-import Header from "./Header/Navbar";
-import Footer from "./Footer/Footer";
+import Header from "../Pages/Navbar";
+import Footer from "../Pages/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Index = () => {
@@ -38,7 +38,7 @@ const Index = () => {
   return (
     <>
       <Header />
-      <div className="w-full phone:p-4 tablet:p-8 laptop:p-16 desktop:p-16 text-white">
+      <div className="w-full phone:p-4 tablet:p-8 laptop:p-16 desktop:p-16 text-white phone:overflow-x-hidden tablet:overflow-x-hidden">
         <div className="flex phone:flex-col-reverse tablet:flex-col-reverse">
           <div className="laptop:w-7/12 desktop:w-7/12 tablet:text-center desktop:pt-[22%] laptop:pt-[22%] text-white phone:text-2xl tablet:text-3xl laptop:text-3xl desktop:text-3xl">
             <label className="FirstLine">Hii There !!! </label>
@@ -59,14 +59,14 @@ const Index = () => {
             </h1>
             <div class="inline-block laptop:mt-[5%] desktop:mt-[5%]">
               <div class="inline-block">
-                <div class="typed-out overflow-hidden border-r-4 border-[gold] phone:text-2xl laptop:text-3xl desktop:text-3xl text-[gold] w-0 whitespace-nowrap">
+                <div class="typed-out overflow-hidden border-r-4 border-[gold] phone:text-base laptop:text-3xl desktop:text-3xl text-[gold] w-0 whitespace-nowrap">
                   Full Stack Developer & Data Scientist &nbsp; &nbsp; &nbsp;
                 </div>
               </div>
             </div>
           </div>
           <div>
-            <img src={homeLogo} alt="home pic" className="h-[540px] phone:h-[400px] tablet:h-[400px] tablet:m-auto phone:m-auto" />
+            <img src={homeLogo} alt="home pic" className="h-[540px] phone:h-[370px] tablet:h-[400px] tablet:m-auto phone:m-auto" />
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const Index = () => {
           <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans laptop:mb-12 desktop:mb-12">
               Let Me <label className="text-[gold]">Introduce</label> Myself
             </h1>
-            <div className="phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl text-justify tablet:pt-8 laptop:pt-1 laptop:pl-8 laptop:pr-16 desktop:pt-1 desktop:pl-8 desktop:pr-16">
+            <div className="phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl phone:text-center tablet:text-center laptop:text-justify desktop:text-justify tablet:pt-8 laptop:pt-1 laptop:pl-8 laptop:pr-16 desktop:pt-1 desktop:pl-8 desktop:pr-16">
               <label className="text-white font-sans">
                 Passionate developer with a keen eye for detail and a love for
                 creating seamless and innovative solutions. I am dedicated to

@@ -1,8 +1,7 @@
 import React from "react";
-import "./Footer.css";
-import Github from "../../Assests/Github.png";
-import Linkedin from "../../Assests/Linkedin.png";
-import Mail from "../../Assests/Mail.png";
+import Github from "../Assests/Github.png";
+import Linkedin from "../Assests/Linkedin.png";
+import Mail from "../Assests/Mail.png";
 
 const Footer = () => {
   const GitHubClick = () => {
@@ -27,7 +26,7 @@ const Footer = () => {
       <div>
         <label>Copyright © 2024 Ritesh Patil</label>
       </div>
-      <div className="grid grid-cols-3 gap-x-20">
+      <div className="grid grid-cols-3 gap-x-20 phone:gap-x-10 tablet:gap-x-10 phone:mt-2">
         <div onClick={LinkedinClick}>
           <img
             src={Linkedin}

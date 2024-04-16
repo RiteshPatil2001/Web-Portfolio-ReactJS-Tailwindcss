@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import JavaProject from "../Assests/JavaProject.png";
 import PythonProject from "../Assests/WeatherForecasting.png";
 import ReactProject from "../Assests/ExpenseTracker.png";
-import Header from "./Header/Navbar";
-import Footer from "./Footer/Footer";
+import Header from "../Pages/Navbar";
+import Footer from "../Pages/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
@@ -38,7 +38,7 @@ const Projects = () => {
   return (
     <>
       <Header />
-      <div className="w-full phone:p-4 tablet:p-12 laptop:p-16 desktop:p-16 text-white">
+      <div className="w-full phone:p-4 phone:pt-8 tablet:p-12 laptop:p-16 desktop:p-16 text-white">
         <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-16">
           My Recent <label className="text-[gold]">Works</label>
         </h1>

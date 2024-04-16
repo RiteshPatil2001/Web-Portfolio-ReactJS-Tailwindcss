@@ -17,8 +17,8 @@ import JMeter from "../Assests/JMeter.png";
 import VisualStudio from "../Assests/VisualStudio.png";
 import MySQLWorkbench from "../Assests/MySQLWorkbench.png";
 import CSharp from "../Assests/Csharp.png";
-import Footer from "./Footer/Footer";
-import Header from "./Header/Navbar";
+import Footer from "../Pages/Footer";
+import Header from "../Pages/Navbar";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -37,7 +37,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <div className="w-full phone:p-4 tablet:p-12 laptop:p-16 desktop:p-16 text-white">
+      <div className="w-full phone:p-4 phone:pt-8 tablet:p-12 laptop:p-16 desktop:p-16 text-white">
         <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-8 laptop:mb-12 desktop:mb-12">
           Here You Know <label className="text-[gold]">More About Me</label>
         </h1>
