@@ -11,7 +11,7 @@ const Navbar = () => {
       <Link to="/" className="navtitle laptop:text-4xl desktop:text-4xl phone:text-3xl phone:p-2 phone:ml-2 tablet:text-3xl tablet:p-2 font-bold tablet:ml-2 laptop:pb-2 laptop:pr-1 laptop:pl-1 desktop:pb-2 desktop:pr-1 desktop:pl-1 laptop:ml-3 desktop:ml-8  text-white no-underline	bg-gradient-to-r from-[gold] to-[gold] origin-[10%] bg-no-repeat">
         Ritesh Patil
       </Link>
-      <div className="menu phone:flex tablet:flex laptop:hidden desktop:hidden absolute flex top-3 right-3 flex-col justify-between w-9 h-6 phone:mt-2 hover:cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
+      <div className="menu phone:flex tablet:flex laptop:hidden desktop:hidden absolute flex top-3 right-3 flex-col justify-between w-9 h-6 phone:mt-2 tablet:mt-4 hover:cursor-pointer" onClick={() => setMenuOpen(!menuOpen)}>
         <span className="h-1 w-full bg-white rounded"></span>
         <span className="h-1 w-full bg-white rounded"></span>
         <span className="h-1 w-full bg-white rounded"></span>

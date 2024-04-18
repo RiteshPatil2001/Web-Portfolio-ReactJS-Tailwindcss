@@ -30,6 +30,7 @@ const Index = () => {
       "_blank"
     );
   };
+
   const MailClick = () => {
     const emailAddress = "riteshpatil6731@gmail.com";
     const mailtoLink = `mailto:${emailAddress}`;
@@ -66,14 +67,17 @@ const Index = () => {
             </div>
           </div>
           <div>
-            <img src={homeLogo} alt="home pic" className="h-[540px] phone:h-[370px] tablet:h-[400px] tablet:m-auto phone:m-auto" />
+            <img
+              src={homeLogo}
+              alt="home pic"
+              className="h-[540px] phone:h-[370px] tablet:h-[400px] tablet:m-auto phone:m-auto"
+            />
           </div>
         </div>
 
-
         <div className="flex phone:flex-col-reverse tablet:flex-col-reverse	mt-28">
           <div className="laptop:w-8/12 desktop:w-8/12">
-          <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans laptop:mb-12 desktop:mb-12">
+            <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans laptop:mb-12 desktop:mb-12">
               Let Me <label className="text-[gold]">Introduce</label> Myself
             </h1>
             <div className="phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl phone:text-center tablet:text-center laptop:text-justify desktop:text-justify tablet:pt-8 laptop:pt-1 laptop:pl-8 laptop:pr-16 desktop:pt-1 desktop:pl-8 desktop:pr-16">
@@ -113,13 +117,11 @@ const Index = () => {
           </div>
         </div>
 
-
-
         <div className="text-center mt-32 mb-8">
-        <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-16 laptop:mb-24 desktop:mb-24">
+          <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-16 laptop:mb-24 desktop:mb-24">
             You Can <label className="text-[gold]">Connect</label> with me
           </h1>
-          <div className="grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-3 desktop:grid-cols-3 laptop:grid-cols-3 justify-items-center phone:gap-y-28	">
+          <div className="grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-3 desktop:grid-cols-3 laptop:grid-cols-3 justify-items-center phone:gap-y-28	mb-32">
             <div className="w-fit cursor-pointer">
               <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
                 <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
@@ -174,6 +176,12 @@ const Index = () => {
               </div>
             </div>
           </div>
+          <a
+            href="/message"
+            className="justify-center bg-[gold] text-black font-sans rounded-lg w-fit cursor-pointer hover:scale-95 active:scale-100 phone:p-2 tablet:p-3 laptop:p-6 desktop:p-6 phone:text-[13px] tablet:text-xl laptop:text-2xl desktop:text-2xl no-underline"
+          >
+            <b>Or You Can Send Me Personalized Message</b>
+          </a>
         </div>
       </div>
       <Footer />

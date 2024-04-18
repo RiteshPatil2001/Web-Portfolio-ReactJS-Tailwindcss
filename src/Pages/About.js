@@ -17,6 +17,12 @@ import JMeter from "../Assests/JMeter.png";
 import VisualStudio from "../Assests/VisualStudio.png";
 import MySQLWorkbench from "../Assests/MySQLWorkbench.png";
 import CSharp from "../Assests/Csharp.png";
+import SpringBoot from "../Assests/spring-boot.png";
+import Wordpress from "../Assests/wordpress.png";
+import Tailwind from "../Assests/tailwind.png";
+import Node from "../Assests/Node.png";
+import GoogleAds from "../Assests/google-ads.png";
+import JavaScript from "../Assests/javascript.png";
 import Footer from "../Pages/Footer";
 import Header from "../Pages/Navbar";
 import { useNavigate } from "react-router-dom";
@@ -100,142 +106,190 @@ const About = () => {
           </label>
         </div>
         <h2 className="pt-32 pb-8 text-center">Profesional Skillset</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={Java} alt="java" className="size-32" />
+            <img src={Java} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 java
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={CPP} alt="java" className="size-32" />
+            <img src={CPP} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 C++
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={Python} alt="java" className="size-32" />
+            <img src={Python} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 Python
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={CSharp} alt="java" className="size-32" />
+            <img src={CSharp} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 C#
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={MySQL} alt="java" className="size-32" />
+            <img src={MySQL} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 MySQL
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={ReactL} alt="java" className="size-32" />
+            <img src={ReactL} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 React
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={HTML} alt="java" className="size-32" />
+            <img src={Node} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+                NodeJS
+              </label>
+            </div>
+          </div>
+          <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
+            <img src={HTML} alt="java" className="size-32 phone:size-24" />
+            <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 HTML
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={CSS} alt="java" className="size-32" />
+            <img src={CSS} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 CSS
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={Git} alt="java" className="size-32" />
+            <img src={Tailwind} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl  text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+                Tailwind CSS
+              </label>
+            </div>
+          </div>
+          <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
+            <img src={JavaScript} alt="java" className="size-32 phone:size-24" />
+            <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
+              <label className="text-center phone:text-2xl  text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+                JavaScript
+              </label>
+            </div>
+          </div>
+          <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
+            <img src={SpringBoot} alt="java" className="size-32 phone:size-24" />
+            <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+                Spring Boot
+              </label>
+            </div>
+          </div>
+          <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
+            <img src={Git} alt="java" className="size-32 phone:size-24" />
+            <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 Git
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={SEO} alt="java" className="size-32" />
+            <img src={SEO} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 SEO
               </label>
             </div>
           </div>
         </div>
         <h2 className="pt-32 text-center pb-8">Tools I Used</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={PowerBI} alt="java" className="size-32" />
+            <img src={PowerBI} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 PowerBI
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={Tableau} alt="java" className="size-32" />
+            <img src={Tableau} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 Tableau
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={Selenium} alt="java" className="size-32" />
+            <img src={Wordpress} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+                Wordpress
+              </label>
+            </div>
+          </div>
+          <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
+            <img src={GoogleAds} alt="java" className="size-32 phone:size-24" />
+            <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+                Google Ads
+              </label>
+            </div>
+          </div>
+          <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
+            <img src={Selenium} alt="java" className="size-32 phone:size-24" />
+            <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 Selenium
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={Jira} alt="java" className="size-32" />
+            <img src={Jira} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 jira
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={JMeter} alt="java" className="size-32" />
+            <img src={JMeter} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 JMeter
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-2 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={VisualStudio} alt="java" className="size-32" />
+            <img src={VisualStudio} alt="java" className="size-32 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 VisualStudio
               </label>
             </div>
           </div>
           <div className="image-container relative flex border-1 border-yellow-400 h-fit rounded-xl p-3 items-center justify-center overflow-hidden shadow-md duration-300 hover:shadow-[0_0_12px_6px_rgba(255,215,0,0.444)] hover:scale-110 hover:cursor-pointer">
-            <img src={MySQLWorkbench} alt="java" className="size-28" />
+            <img src={MySQLWorkbench} alt="java" className="size-28 phone:size-24" />
             <div className="overlay absolute bg-[rgba(0,0,0,0.5)] bottom-0 left-0 w-full h-0 duration-300 overflow-hidden">
-              <label className="text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
+              <label className="text-center phone:text-2xl text-3xl font-semibold capitalize overlay-text absolute top-2/4	left-2/4	duration-500 text-white">
                 Workbench
               </label>
             </div>
