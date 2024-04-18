@@ -23,8 +23,8 @@ import Tailwind from "../Assests/tailwind.png";
 import Node from "../Assests/Node.png";
 import GoogleAds from "../Assests/google-ads.png";
 import JavaScript from "../Assests/javascript.png";
-import Footer from "../Pages/Footer";
-import Header from "../Pages/Navbar";
+import Footer from "../Components/Navbar";
+import Header from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {

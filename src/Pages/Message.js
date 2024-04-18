@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
-import Header from "../Pages/Navbar";
-import Footer from "../Pages/Footer";
+import Header from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 

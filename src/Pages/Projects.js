@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import JavaProject from "../Assests/JavaProject.png";
 import PythonProject from "../Assests/WeatherForecasting.png";
 import ReactProject from "../Assests/ExpenseTracker.png";
-import Header from "../Pages/Navbar";
-import Footer from "../Pages/Footer";
+import Footer from "../Components/Navbar";
+import Header from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {

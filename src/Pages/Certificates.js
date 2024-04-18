@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import IBMPython from "../Assests/IBMPython.png";
 import OracleCertificate from "../Assests/OracleCertificate.png";
 import GoogleCertificate from "../Assests/GoogleCertificate.jpg";
-import Header from "../Pages/Navbar";
-import Footer from "../Pages/Footer";
+import Footer from "../Components/Navbar";
+import Header from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 
 const Certificates = () => {

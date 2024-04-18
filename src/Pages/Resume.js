@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ResumePNG from "../Assests/ResumePNG.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Header from "../Pages/Navbar";
-import Footer from "../Pages/Footer";
+import Header from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 

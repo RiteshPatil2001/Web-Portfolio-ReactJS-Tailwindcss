@@ -4,9 +4,10 @@ import ritesh from "../Assests/Ritesh.jpg";
 import Github from "../Assests/Github.png";
 import Linkedin from "../Assests/Linkedin.png";
 import Mail from "../Assests/Mail.png";
-import Header from "../Pages/Navbar";
-import Footer from "../Pages/Footer";
+import Header from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -176,12 +177,12 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <a
-            href="/message"
+          <Link
+            to="/message"
             className="justify-center bg-[gold] text-black font-sans rounded-lg w-fit cursor-pointer hover:scale-95 active:scale-100 phone:p-2 tablet:p-3 laptop:p-6 desktop:p-6 phone:text-[13px] tablet:text-xl laptop:text-2xl desktop:text-2xl no-underline"
           >
             <b>Or You Can Send Me Personalized Message</b>
-          </a>
+          </Link>
         </div>
       </div>
       <Footer />
