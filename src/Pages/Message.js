@@ -108,17 +108,17 @@ const Message = () => {
       hasErrors = true;
     }
   
-    // Company name validation
+    // Subject validation
     if (formData.subject.trim() === "") {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        subject: "Company name cannot be empty.",
+        subject: "Subject cannot be empty.",
       }));
       hasErrors = true;
     } else if (!subjectPattern.test(formData.subject.trim())) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        subject: "Company name should not be more than 1000 digit.",
+        subject: "Subject should not be more than 100 digit.",
       }));
       hasErrors = true;
     }
@@ -166,9 +166,9 @@ const Message = () => {
         <div className="flex justify-center">
           <div className="w-fit text-left">
             <form ref={form} onSubmit={validate}>
-              <div className="h-32">
+              <div className="h-32 phone:h-28">
                 <div className="">
-                  <label className="text-2xl font-bold">
+                  <label className="text-2xl phone:text-xl font-bold">
                     Name<sup className="text-[rgba(255,0,0)]">*</sup>
                   </label>
                   <div className="innerdiv">
@@ -178,7 +178,7 @@ const Message = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Your Name"
-                      className="min-w-[450px] max-w-[450px] text-lg p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
+                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
                     />
                   </div>
                 </div>
@@ -189,9 +189,9 @@ const Message = () => {
                 </div>
               </div>
 
-              <div className="h-32">
+              <div className="h-32 phone:h-28">
                 <div>
-                  <label className="text-2xl font-bold">
+                  <label className="text-2xl phone:text-xl font-bold">
                     Email<sup className="text-[rgba(255,0,0)]">*</sup>
                   </label>
                   <div className="innerdiv">
@@ -201,7 +201,7 @@ const Message = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="Your Email"
-                      className="min-w-[450px] max-w-[450px] text-lg p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
+                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
                     />
                   </div>
                 </div>
@@ -212,9 +212,9 @@ const Message = () => {
                 </div>
               </div>
 
-              <div className="h-32">
+              <div className="h-32 phone:h-28">
                 <div>
-                  <label className="text-2xl font-bold">
+                  <label className="text-2xl phone:text-xl font-bold">
                     Contact<sup className="text-[rgba(255,0,0)]">*</sup>
                   </label>
                   <div className="innerdiv">
@@ -224,7 +224,7 @@ const Message = () => {
                       value={formData.contact}
                       onChange={handleInputChange}
                       placeholder="Your Contact"
-                      className="min-w-[450px] max-w-[450px] text-lg p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
+                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
                     />
                   </div>
                 </div>
@@ -235,10 +235,10 @@ const Message = () => {
                 </div>
               </div>
 
-              <div className="h-32">
+              <div className="h-32 phone:h-28">
                 <div>
-                  <label className="text-2xl font-bold">
-                    Company Name<sup className="text-[rgba(255,0,0)]">*</sup>
+                  <label className="text-2xl phone:text-xl font-bold">
+                    Subject<sup className="text-[rgba(255,0,0)]">*</sup>
                   </label>
                   <div className="innerdiv">
                     <input
@@ -246,8 +246,8 @@ const Message = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      placeholder="Your Company Name"
-                      className="min-w-[450px] max-w-[450px] text-lg p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
+                      placeholder="Subject"
+                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
                     />
                   </div>
                 </div>
@@ -260,7 +260,7 @@ const Message = () => {
 
               <div className="h-362">
                 <div>
-                  <label className="text-2xl font-bold">
+                  <label className="text-2xl phone:text-xl font-bold">
                     Message<sup className="text-[rgba(255,0,0)]">*</sup>
                   </label>
                   <div className="innerdiv">
@@ -270,7 +270,7 @@ const Message = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       placeholder="Message"
-                      className="min-w-[450px] max-w-[450px] min-h-48 max-h-96 text-lg p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
+                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] min-h-48 max-h-96 phone:max-h-48 phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
                     />
                   </div>
                 </div>

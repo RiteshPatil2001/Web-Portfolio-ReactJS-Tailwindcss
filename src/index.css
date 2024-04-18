@@ -63,6 +63,7 @@ nav ul li a {
   nav ul.open {
       display: flex;
       background-color: #1b1a2ee8;
+      padding: 0 0 3% 0;
       border-bottom: 1px solid gold;
   }
 
