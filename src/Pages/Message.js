@@ -3,6 +3,8 @@ import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import FormInputField from "../Components/FormInputField";
+import FormTextField from "../Components/FormTextField";
 
 const Message = () => {
   const navigate = useNavigate();
@@ -166,121 +168,11 @@ const Message = () => {
         <div className="flex justify-center">
           <div className="w-fit text-left">
             <form ref={form} onSubmit={validate}>
-              <div className="h-32 phone:h-28">
-                <div className="">
-                  <label className="text-2xl phone:text-xl font-bold">
-                    Name<sup className="text-[rgba(255,0,0)]">*</sup>
-                  </label>
-                  <div className="innerdiv">
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Your Name"
-                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="part2">
-                  <span className="text-[rgba(255,0,0)] font-semibold ml-3 mt-1 text-base" id="errorname">
-                    {errors.name}
-                  </span>
-                </div>
-              </div>
-
-              <div className="h-32 phone:h-28">
-                <div>
-                  <label className="text-2xl phone:text-xl font-bold">
-                    Email<sup className="text-[rgba(255,0,0)]">*</sup>
-                  </label>
-                  <div className="innerdiv">
-                    <input
-                      type="text"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="Your Email"
-                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="part2">
-                  <span className="text-[rgba(255,0,0)] font-semibold ml-3 mt-1 text-base" id="erroremail">
-                    {errors.email}
-                  </span>
-                </div>
-              </div>
-
-              <div className="h-32 phone:h-28">
-                <div>
-                  <label className="text-2xl phone:text-xl font-bold">
-                    Contact<sup className="text-[rgba(255,0,0)]">*</sup>
-                  </label>
-                  <div className="innerdiv">
-                    <input
-                      type="text"
-                      name="contact"
-                      value={formData.contact}
-                      onChange={handleInputChange}
-                      placeholder="Your Contact"
-                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="part2">
-                  <span className="text-[rgba(255,0,0)] font-semibold ml-3 mt-1 text-base" id="errorcontact">
-                    {errors.contact}
-                  </span>
-                </div>
-              </div>
-
-              <div className="h-32 phone:h-28">
-                <div>
-                  <label className="text-2xl phone:text-xl font-bold">
-                    Subject<sup className="text-[rgba(255,0,0)]">*</sup>
-                  </label>
-                  <div className="innerdiv">
-                    <input
-                      type="text"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      placeholder="Subject"
-                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="part2">
-                  <span className="text-[rgba(255,0,0)] font-semibold ml-3 mt-1 text-base" id="errorsubject">
-                    {errors.subject}
-                  </span>
-                </div>
-              </div>
-
-              <div className="h-362">
-                <div>
-                  <label className="text-2xl phone:text-xl font-bold">
-                    Message<sup className="text-[rgba(255,0,0)]">*</sup>
-                  </label>
-                  <div className="innerdiv">
-                    <textarea
-                      type="text"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Message"
-                      className="min-w-[450px] max-w-[450px] phone:min-w-[300px] min-h-48 max-h-96 phone:max-h-48 phone:max-w-[300px] phone:text-sm tablet:text-lg laptop:text-lg desktop:text-lg phone:p-2 tablet:p-3 laptop:p-3 desktop:p-3 rounded text-white outline-none border-2 border-gray-400 bg-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="part2">
-                  <span className="text-[rgba(255,0,0)] font-semibold ml-3 mt-1 text-base" id="errormessage">
-                    {errors.message}
-                  </span>
-                </div>
-              </div>
-
+              <FormInputField label="Name" type="text" name="name" value={formData.name} onChange={handleInputChange} placeholder="Your Name" errorid="errorname" errormessage={errors.name} />
+              <FormInputField label="Email" type="text" name="email" value={formData.email} onChange={handleInputChange} placeholder="Your Email-ID" errorid="erroremail" errormessage={errors.email} />
+              <FormInputField label="Contact" type="contact" name="contact" value={formData.contact} onChange={handleInputChange} placeholder="Your Contact" errorid="errorcontact" errormessage={errors.contact} />
+              <FormInputField label="Subject" type="text" name="subject" value={formData.subject} onChange={handleInputChange} placeholder="Subject" errorid="errorsubject" errormessage={errors.subject} />
+              <FormTextField label="Message" type="text" name="message" value={formData.message} onChange={handleInputChange} placeholder="Message" errorid="errormessage" errormessage={errors.message} />
               <div className="flex justify-center mt-12">
                 <button type="submit" className="px-8 py-2 rounded-lg text-3xl font-bold justify-center bg-[gold] text-black font-sans hover:scale-90 active:scale-100">Send</button>
               </div>

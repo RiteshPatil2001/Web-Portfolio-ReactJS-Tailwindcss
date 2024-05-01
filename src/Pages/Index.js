@@ -8,6 +8,7 @@ import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Connectcard from "../Components/Connectcard";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -123,59 +124,9 @@ const Index = () => {
             You Can <label className="text-[gold]">Connect</label> with me
           </h1>
           <div className="grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-3 desktop:grid-cols-3 laptop:grid-cols-3 justify-items-center phone:gap-y-28	mb-32">
-            <div className="w-fit cursor-pointer">
-              <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
-                <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
-                  <div
-                    className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white"
-                    onClick={GitHubClick}
-                  >
-                    <img
-                      src={Github}
-                      alt="github pic"
-                      className="flex m-auto tablet:mt-1 phone:mt-2 laptop:mt-2 desktop:mt-2 phone:w-44 phone:h-44 tablet:w-32 tablet:h-32 laptop:w-44 laptop:h-44 desktop:w-44 desktop:h-44"
-                    />
-                    <h2>GitHub</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-fit cursor-pointer">
-              <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
-                <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
-                  <div
-                    className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white"
-                    onClick={LinkedinClick}
-                  >
-                    <img
-                      src={Linkedin}
-                      alt="github pic"
-                      className="flex m-auto tablet:mt-1 phone:mt-2 laptop:mt-2 desktop:mt-2 phone:w-44 phone:h-44 tablet:w-32 tablet:h-32 laptop:w-44 laptop:h-44 desktop:w-44 desktop:h-44"
-                    />
-                    <h2>Linkedin</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-fit cursor-pointer">
-              <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-0	rounded-xl -rotate-[22deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
-                <div className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-10	rounded-xl rotate-[11deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)]">
-                  <div
-                    className="phone:w-52 phone:h-64 tablet:w-44 tablet:h-52 laptop:w-64 laptop:h-72 desktop:w-64 desktop:h-72 bg-black shadow-[0_0_4px_4px_rgba(255,255,255,0.444)] z-20	rounded-xl rotate-[10deg] hover:shadow-[0_0_20px_6px_rgba(255,255,255,0.444)] pt-6 text-white"
-                    onClick={MailClick}
-                  >
-                    <img
-                      src={Mail}
-                      alt="github pic"
-                      className="flex m-auto tablet:mt-1 phone:mt-2 laptop:mt-2 desktop:mt-2 phone:w-44 phone:h-44 tablet:w-32 tablet:h-32 laptop:w-44 laptop:h-44 desktop:w-44 desktop:h-44"
-                    />
-                    <h2>Mail</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Connectcard src={Github} alt="Github Img" label="Github" event={GitHubClick} />
+            <Connectcard src={Linkedin} alt="Linkedin Img" label="Linkedin" event={LinkedinClick} />
+            <Connectcard src={Mail} alt="Mail Img" label="Mail" event={MailClick} />
           </div>
           <Link
             to="/message"

@@ -5,6 +5,7 @@ import PythonProject from "../Assests/WeatherForecasting.png";
 import ReactProject from "../Assests/ExpenseTracker.png";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import ProjectCard from "../Components/ProjectCard";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
@@ -42,40 +43,31 @@ const Projects = () => {
         <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-16">
           My Recent <label className="text-[gold]">Works</label>
         </h1>
-        <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
-          <img
-            src={JavaProject}
-            alt="Java Project pic"
-            className="desktop:w-5/12 laptop:w-5/12"
-          />
-          <div className="p-4">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop::text-2xl font-serif">
-              FlyEase - Web-based Flight Ticket Booking Application
-            </label>
-            <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
-              FlyEase, a web-based flight ticket booking application developed
+        <ProjectCard
+          src={JavaProject}
+          alt="Java Project pic"
+          projectTitle="FlyEase - Web-based Flight Ticket Booking Application"
+          projectdesc="FlyEase, a web-based flight ticket booking application developed
               using the Spring Boot MVC framework. The application enables users
               to search for flights, access flight details, and make online
               bookings. It also consists of admin section for managing flights
               and user details. Utilized the MySQL database to store and manage
-              flight-related information.
-            </label>
-            <label className="phone:pt-3 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:pl-1 tablet:pl-2 laptop:pl-4 desktop:pl-4 font-sans phone:mb-3 tablet:mb-3 ">
-              <label className="text-[gold]">
-                <b>Technology Used -</b>{" "}
-              </label>{" "}
-              Java, Spring MVC, JSP, JPA, MySQL
-            </label>
-            <br></br>
-            <label
-              className="border-2 border-[gold] text-[gold] bg-black phone:text-sm phone:p-2 tablet:p-2 laptop:p-3 desktop:p-3 float-right rounded-lg cursor-pointer hover:scale-90 active:scale-100 phone:mb-3 tablet:mb-3"
-              onClick={FlyEaseProject}
-            >
-              GitHub Link
-            </label>
-          </div>
-        </div>
-
+              flight-related information."
+          projecttech="Java, Spring MVC, JSP, JPA, MySQL"
+          onClick={FlyEaseProject}
+        />
+        <ProjectCard
+          src={ReactProject}
+          alt="React Project pic"
+          projectTitle="Expense Tracker System using React MERN Stack"
+          projectdesc="The Expense Tracker Application aims to provide a user-friendly
+              and efficient solution for managing income and expenses. This
+              application will allow users to add, update, and delete income and
+              expense transactions, as well as visualize their financial data
+              through various graphs and charts."
+          projecttech="React, MongoDB, Node JS, Express, CSS"
+          onClick={ExpenseTracker}
+        />
         <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
           <img
             src={PythonProject}
@@ -83,7 +75,7 @@ const Projects = () => {
             className="laptop:w-[210%] laptop:h-[320px] desktop:w-[210%] desktop:h-[320px] phone:h-[220px] tablet:h-[420px] tablet:w-[150%] phone:w-full tablet:"
           />
           <div className="p-4">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop::text-2xl font-serif laptop:w-[193%] laptop:h-320px desktop:w-[193%] desktop:h-320px">
+            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-serif">
               Weather Forecasting App
             </label>
             <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
@@ -109,43 +101,9 @@ const Projects = () => {
             </label>
           </div>
         </div>
-
-        <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
-          <img
-            src={ReactProject}
-            alt="Java Project pic"
-            className="desktop:w-5/12 laptop:w-5/12"
-          />
-          <div className="p-4">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop::text-2xl font-serif">
-              Expense Tracker System using React MERN Stack
-            </label>
-            <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
-              The Expense Tracker Application aims to provide a user-friendly
-              and efficient solution for managing income and expenses. This
-              application will allow users to add, update, and delete income and
-              expense transactions, as well as visualize their financial data
-              through various graphs and charts.
-            </label>
-            <label className="phone:pt-3 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:pl-1 tablet:pl-2 laptop:pl-4 desktop:pl-4  font-sans phone:mb-3 tablet:mb-3 ">
-              <label className="text-[gold]">
-                <b>Technology Used -</b>{" "}
-              </label>{" "}
-              React, MongoDB, Node JS, Express, CSS
-            </label>
-            <br></br>
-            <label
-              className="border-2 border-[gold] text-[gold] bg-black phone:text-sm phone:p-2 tablet:p-2 laptop:p-3 desktop:p-3 float-right rounded-lg cursor-pointer hover:scale-90 active:scale-100 phone:mb-3 tablet:mb-3"
-              onClick={ExpenseTracker}
-            >
-              GitHub Link
-            </label>
-          </div>
-        </div>
-
         <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
           <div className="p-8">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop::text-2xl font-serif">
+            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-serif">
               Travel Blog Website - rpdiary.com (Self-Learning)
             </label>
             <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
@@ -158,7 +116,7 @@ const Projects = () => {
               <label className="text-[gold]">
                 <b>Technology Used -</b>{" "}
               </label>{" "}
-              WordPress, Yoast SEO, rankMath, Adsense
+              WordPress, Yoast SEO, rankMath, Google Adsense
             </label>
             <br></br>
           </div>

@@ -4,6 +4,7 @@ import OracleCertificate from "../Assests/OracleCertificate.png";
 import GoogleCertificate from "../Assests/GoogleCertificate.jpg";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import CertificateCard from "../Components/CertificateCard";
 import { useNavigate } from "react-router-dom";
 
 const Certificates = () => {
@@ -41,36 +42,9 @@ const Certificates = () => {
               Awaits
             </label>
           </div>
-          <div className="h-full ph">
-            <label className="text-white phone:text-base tablet:text-2xl laptop:text-3xl desktop:text-3xl font-serif border-b-2 border-[gold]">
-              Python For Data Science by IBM
-            </label>
-            <img
-              src={IBMPython}
-              alt="IBM Certificate pic"
-              className="h-full w-full phone:mt-3 mt-6 phone:mb-16 tablet:mb-20 laptop:mb-32 desktop:mb-32 phone:rounded-lg tablet:rounded-xl rounded-2xl"
-            />
-          </div>
-          <div className="h-full">
-            <label className="text-white phone:text-base tablet:text-2xl laptop:text-3xl desktop:text-3xl font-serif border-b-2 border-[gold]">
-              Oracle Cloud Infrastructure 2023
-            </label>
-            <img
-              src={OracleCertificate}
-              alt="Oracle Certificate pic"
-              className="h-full w-full phone:mt-3 mt-6 phone:mb-16 tablet:mb-20 laptop:mb-32 desktop:mb-32 phone:rounded-lg tablet:rounded-xl rounded-2xl"
-            />
-          </div>
-          <div className="h-full">
-            <label className="text-white phone:text-base tablet:text-2xl laptop:text-3xl desktop:text-3xl font-serif border-b-2 border-[gold]">
-              Google Digital Unlocked - The Fundametal Of Digital Marketing
-            </label>
-            <img
-              src={GoogleCertificate}
-              alt="Google Certificate pic"
-              className="h-full w-full phone:mt-3 mt-6 phone:mb-16 tablet:mb-20 laptop:mb-32 desktop:mb-32 phone:rounded-lg tablet:rounded-xl rounded-2xl"
-            />
-          </div>
+          <CertificateCard src={IBMPython} alt="IBM Certificate pic" label="Python For Data Science by IBM" />
+          <CertificateCard src={OracleCertificate} alt="Oracle Certificate pic" label="Oracle Cloud Infrastructure 2023" />
+          <CertificateCard src={GoogleCertificate} alt="Google Certificate pic" label="Google Digital Unlocked - The Fundametal Of Digital Marketing" />
         </div>
       </div>
       <Footer />
