@@ -1,46 +1,55 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const CustomInputArea = ({
-    src,
-    alt,
-    projectTitle,
-    projectdesc,
-    projecttech,
-    onClick,
-  
+const ProjectCard = ({
+  img = false,
+  src = "",
+  alt = "",
+  title,
+  description,
+  technologies,
+  button = false,
+  onClick = () => {},
 }) => {
   return (
-    <>
-      <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
-          <img
-            src={src}
-            alt={alt}
-            className="desktop:w-5/12 laptop:w-5/12 cursor-pointer"
-          />
-          <div className="p-4">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-serif">
-              {projectTitle}
-            </label>
-            <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
-              {projectdesc}
-            </label>
-            <label className="phone:pt-3 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:pl-1 tablet:pl-2 laptop:pl-4 desktop:pl-4 font-sans phone:mb-3 tablet:mb-3 ">
-              <label className="text-[gold]">
-                <b>Technology Used -</b>{" "}
-              </label>{" "}
-                {projecttech}
-            </label>
-            <br></br>
-            <label
-              className="border-2 border-[gold] text-[gold] bg-black phone:text-sm phone:p-2 tablet:p-2 laptop:p-3 desktop:p-3 float-right rounded-lg cursor-pointer hover:scale-90 active:scale-100 phone:mb-3 tablet:mb-3"
-              onClick={onClick}
-            >
-              GitHub Link
-            </label>     
-          </div>
+    <div className="cd-timeline-block">
+      <div className="cd-timeline-img"></div>
+      <div className="cd-timeline-content">
+        {img && <img className="rounded-lg mb-6" src={src} alt={alt} />}
+        <div className="phone:px-2 tablet:px-3 laptop:px-4 desktop:px-4 phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-bold text-center">
+          {title}
         </div>
-    </>
+        <div className="cd-description phone:p-2 tablet:p-3 laptop:p-4 desktop:p-4 font-medium phone:text-sm tablet:text-base text-justify laptop:text-lg desktop:text-lg">
+          {description}
+        </div>
+        <div className="phone:pt-3 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:pl-1 tablet:pl-2 laptop:pl-4 desktop:pl-4 font-sans phone:mb-3 tablet:mb-3">
+          <b>Technology Used - </b>
+          <span className="font-medium phone:text-sm tablet:text-base text-justify laptop:text-lg desktop:text-lg">
+            {technologies}
+          </span>
+        </div>
+        {button && (
+          <label
+            onClick={onClick}
+            className="w-44 phone:w-40 bg-black py-2 rounded-md mt-8 flex justify-center items-center text-white font-bold text-2xl phone:text-xl cursor-pointer hover:scale-110 active:scale-100 mx-auto"
+          >
+            Github Link
+          </label>
+        )}
+      </div>
+    </div>
   );
 };
 
-export default CustomInputArea;
+ProjectCard.propTypes = {
+  img: PropTypes.bool,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  technologies: PropTypes.string.isRequired,
+  button: PropTypes.bool,
+  onClick: PropTypes.func,
+};
+
+export default ProjectCard;

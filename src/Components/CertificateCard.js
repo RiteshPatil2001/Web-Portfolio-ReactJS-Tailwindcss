@@ -1,19 +1,17 @@
 import React from "react";
 
-const CertificateCard = ({ src, alt, label }) => {
+const CertificateCard = ({ src, alt, title, date }) => {
   return (
-    <>
-      <div className="h-full">
-        <label className="text-white phone:text-base tablet:text-2xl laptop:text-3xl desktop:text-3xl font-serif border-b-2 border-[gold]">
-          {label}
+    <div className="cd-timeline-block">
+      <div className="cd-timeline-img"></div>
+      <div className="cd-timeline-content">
+        <img src={src} alt={alt} className="rounded-lg cursor-pointer" />
+        <label className="phone:px-2 tablet:px-3 laptop:px-4 desktop:px-4 phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-bold desktop:pt-8 laptop:pt-8 tablet:pt-8 phone:pt-4">
+          {title}
         </label>
-        <img
-          src={src}
-          alt={alt}
-          className="h-full w-full phone:mt-3 mt-6 phone:mb-16 tablet:mb-20 laptop:mb-32 desktop:mb-32 phone:rounded-lg tablet:rounded-xl rounded-2xl"
-        />
+        <span className="cd-date">{date}</span>
       </div>
-    </>
+    </div>
   );
 };
 

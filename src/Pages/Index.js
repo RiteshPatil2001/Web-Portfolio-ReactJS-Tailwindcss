@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import homeLogo from "../Assests/Homee.png";
 import ritesh from "../Assests/Ritesh.jpg";
 import Github from "../Assests/Github.png";
 import Linkedin from "../Assests/Linkedin.png";
@@ -7,8 +6,9 @@ import Mail from "../Assests/Mail.png";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import Connectcard from "../Components/Connectcard";
+import MailBlack from "../Assests/connect.png";
+import { Link as ScrollLink, Element } from "react-scroll";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -41,100 +41,113 @@ const Index = () => {
   return (
     <>
       <Header />
-      <div className="w-full phone:p-4 tablet:p-8 laptop:p-16 desktop:p-16 text-white phone:overflow-x-hidden tablet:overflow-x-hidden">
-        <div className="flex phone:flex-col-reverse tablet:flex-col-reverse">
-          <div className="laptop:w-7/12 desktop:w-7/12 tablet:text-center desktop:pt-[22%] laptop:pt-[22%] text-white phone:text-2xl tablet:text-3xl laptop:text-3xl desktop:text-3xl">
-            <label className="FirstLine">Hii There !!! </label>
-            <span
-              className="wave inline-block"
-              role="img"
-              aria-labelledby="wave"
-            >
-              {" "}
-              👋{" "}
-            </span>
-            <h1 className="text-white phone:text-[1.8rem] tablet:text-[3rem] laptop:text-[4rem] desktop:text-[4rem] font-[750] leading-[1em] uppercase">
-              I'M
-              <strong className="main-name text-white font-[800] leading-[1em]">
-                {" "}
-                RITESH PATIL
-              </strong>
-            </h1>
-            <div class="inline-block laptop:mt-[5%] desktop:mt-[5%]">
-              <div class="inline-block">
-                <div class="typed-out overflow-hidden border-r-4 border-[gold] phone:text-base laptop:text-3xl desktop:text-3xl text-[gold] w-0 whitespace-nowrap">
-                  Full Stack Developer & Data Scientist &nbsp; &nbsp; &nbsp;
-                </div>
-              </div>
+      <div className="w-full phone:p-4 tablet:pl-8 tablet:pr-8 laptop:pl-16 laptop:pr-8 desktop:pl-16 desktop:pr-8 phone:overflow-x-hidden tablet:overflow-x-hidden">
+        <div className="outerbody">
+          <div className="background-effect"></div>
+          <div className="dot-pattern flex flex-col items-center">
+            <div className="absolute flex flex-col items-center desktop:top-52 laptop:top-52 tablet:top-44 phone:top-44">
+              <label className="text-6xl phone:text-2xl tablet:text-4xl font-medium leading-[3.5rem]">
+                Hello🙋 I'm{" "}
+                <label className="titlename font-bold text-[#056583]">
+                  Ritesh Patil
+                </label>
+              </label>
+              <label className="text-3xl phone:text-lg tablet:text-2xl font-[500] leading-[3rem] pb-4">
+                Building the Future of Web and Data
+              </label>
+              <label className="text-lg phone:text-sm tablet:text-base font-[500] text-center leading-[1.5rem] phone:pl-3 phone:pr-3">
+                Expertise in Full Stack Development And Dynamic Development |
+                Skilled in Modern
+                <br />
+                Frameworks and Technologies | Mastering the Art of Data Science
+              </label>
+              <ScrollLink
+                to="connect"
+                smooth={true}
+                duration={500}
+                className="connectbutton h-16 w-80 mt-32 rounded-xl phone:w-60 tablet:w-72 border flex items-center justify-center desktop:text-2xl desktop:font-semibold laptop:text-2xl laptop:font-semibold tablet:text-xl tablet:font-medium phone:text-xl phone:font-medium bg-[#4691a9] text-white cursor-pointer no-underline hover:scale-110"
+              >
+                Let's Connect&nbsp;&nbsp;<img src={MailBlack} alt=""></img>
+              </ScrollLink>
             </div>
-          </div>
-          <div>
-            <img
-              src={homeLogo}
-              alt="home pic"
-              className="h-[540px] phone:h-[370px] tablet:h-[400px] tablet:m-auto phone:m-auto"
-            />
           </div>
         </div>
 
-        <div className="flex phone:flex-col-reverse tablet:flex-col-reverse	mt-28">
-          <div className="laptop:w-8/12 desktop:w-8/12">
-            <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans laptop:mb-12 desktop:mb-12">
-              Let Me <label className="text-[gold]">Introduce</label> Myself
-            </h1>
-            <div className="phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl phone:text-center tablet:text-center laptop:text-justify desktop:text-justify tablet:pt-8 laptop:pt-1 laptop:pl-8 laptop:pr-16 desktop:pt-1 desktop:pl-8 desktop:pr-16">
-              <label className="text-white font-sans">
+        <div className="flex w-full pt-24 phone:pt-8 tablet:pt-16 justify-center">
+          <div className="w-[95%] h-fit bg-white rounded-xl overflow-hidden shadow-lg flex desktop:flex-row laptop:flex-row tablet:flex-row phone:flex-col">
+            <img
+              src={ritesh}
+              alt=""
+              className="desktop:w-4/12 laptop:w-4/12 cursor-pointer"
+            ></img>
+            <div className="font-poppins text-black pt-8 pr-8 pl-8 pb-3 text-xl phone:text-lg phone:leading-7 tablet:text-lg tablet:leading-7 font-medium leading-[2rem] text-justify">
+              {/* <p><span className="text-[#056583] font-semibold">A Small Introduction</span></p> */}
+              <p>
                 Passionate developer with a keen eye for detail and a love for
                 creating seamless and innovative solutions. I am dedicated to
                 delivering high-quality code and collaborating with
                 cross-functional teams to turn ideas into reality.
-                <br />
-                <br />I have developed proficiency in programming languages such
-                as{" "}
-                <text className="text-[gold]">
-                  Java, ReactJs, Python, C++, MERN stack, Tailwind-CSS and many
-                  more
-                </text>{" "}
+              </p>
+              <p>
+                I have developed proficiency in programming languages such as{" "}
+                <span className="text-[#b73535] font-semibold">
+                  Java, ReactJs, Python, Spring Boot, MERN stack, TailwindCSS
+                  and many more
+                </span>{" "}
                 along with hands-on experience with it.
-                <br />
-                <br />
-                <text className="text-[gold]">
+              </p>
+
+              <p>
+                <span className="text-[#b73535] font-semibold">
                   Data analysis and machine learning
-                </text>{" "}
+                </span>{" "}
                 are my additional areas of interest.
-                <br />
-                <br />
+              </p>
+
+              <p>
                 Whenever I can, I incorporate my passion for{" "}
-                <text className="text-[gold]">cricket and swimming</text> which
-                helps me stay physically active.
-              </label>
+                <span className="text-[#b73535] font-semibold">
+                  cricket and swimming
+                </span>{" "}
+                which helps me stay physically active.
+              </p>
             </div>
-          </div>
-          <div className="phone:w-full tablet:w-full laptop:w-4/12 desktop:e-4/12 flex justify-center items-center">
-            <img
-              src={ritesh}
-              alt="ritesh pic"
-              className="phone:h-72 phone:w-72 phone:mb-8 tablet:mb-8  tablet:w-96 tablet:h-96 laptop:w-96 laptop:h-96 desktop:w-96 desktop:h-96 rounded-full cursor-pointer"
-            />
           </div>
         </div>
 
-        <div className="text-center mt-32 mb-8">
-          <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-16 laptop:mb-24 desktop:mb-24">
-            You Can <label className="text-[gold]">Connect</label> with me
-          </h1>
-          <div className="grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-3 desktop:grid-cols-3 laptop:grid-cols-3 justify-items-center phone:gap-y-28	mb-32">
-            <Connectcard src={Github} alt="Github Img" label="Github" event={GitHubClick} />
-            <Connectcard src={Linkedin} alt="Linkedin Img" label="Linkedin" event={LinkedinClick} />
-            <Connectcard src={Mail} alt="Mail Img" label="Mail" event={MailClick} />
-          </div>
-          <Link
-            to="/message"
-            className="justify-center bg-[gold] text-black font-sans rounded-lg w-fit cursor-pointer hover:scale-95 active:scale-100 phone:p-2 tablet:p-3 laptop:p-6 desktop:p-6 phone:text-[13px] tablet:text-xl laptop:text-2xl desktop:text-2xl no-underline"
-          >
-            <b>Or You Can Send Me Personalized Message</b>
-          </Link>
-        </div>
+        <Element name="connect">
+          <section id="connect">
+            <div className="text-center mt-32 mb-8 phone:mt-24 ">
+              <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-[#056583] font-sans mb-6 laptop:mb-12 desktop:mb-12">
+                You Can <label className="text-[#b73535]">Connect</label> with
+                me
+              </h1>
+              <div className="grid grid-cols-1 phone:grid-cols-1 tablet:grid-cols-3 desktop:grid-cols-3 laptop:grid-cols-3 justify-items-center phone:gap-y-12 mb-16">
+                <Connectcard
+                  src={Github}
+                  event={GitHubClick}
+                  alt=""
+                  label="Check out my projects on GitHub. Let's collaborate and code together!"
+                  btntext="Github"
+                />
+                <Connectcard
+                  src={Linkedin}
+                  event={LinkedinClick}
+                  alt=""
+                  label="Let's connect and share our professional journeys! Explore my professional profile on LinkedIn."
+                  btntext="Linkedin"
+                />
+                <Connectcard
+                  src={Mail}
+                  event={MailClick}
+                  alt=""
+                  label="Drop me a line, let's start a conversation! You can send me messages through email."
+                  btntext="Mail"
+                />
+              </div>
+            </div>
+          </section>
+        </Element>
       </div>
       <Footer />
     </>

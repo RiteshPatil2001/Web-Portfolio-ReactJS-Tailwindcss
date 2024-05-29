@@ -8,7 +8,6 @@ import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 const Resume = () => {
-
   const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,25 +28,25 @@ const Resume = () => {
     link.click();
   };
 
-
   return (
     <>
       <Header />
-      <div className="w-full p-8 phone:pt-8 tablet:p-20 laptop:p-28 desktop:p-28  text-center">
+      <div className="w-full p-8 phone:pt-24 tablet:p-24 laptop:p-32 desktop:p-32  text-center">
         <label
-          className="justify-center bg-[gold] text-black font-sans rounded-lg w-fit cursor-pointer hover:scale-90 active:scale-100 phone:p-2 tablet:p-3 laptop:p-6 desktop:p-6 phone:text-lg tablet:text-2xl laptop:text-2xl desktop:text-2xl"
           onClick={handleDownload}
+          className="w-80 phone:w-60 phone:text-lg bg-black desktop:py-3 laptop:py-3 tablet:py-2 phone:py-2 rounded-md mt-auto flex justify-center items-center text-white font-bold text-2xl cursor-pointer hover:scale-110 active:scale-100 mx-auto"
         >
-          <b>Download Resume</b>
+          Download Resume
           <FontAwesomeIcon
             className="phone:ml-2 tablet:ml-4 desktop:ml-4 laptop:ml-4 relative top-0.5"
             icon={faFileArrowDown}
           />
         </label>
+
         <img
           src={ResumePNG}
           alt="Resume pic"
-          className="w-full phone:mt-8 tablet:mt-16 desktop:mt-16 laptop:mt-16 rounded-xl	"
+          className="w-full phone:mt-8 tablet:mt-16 desktop:mt-16 laptop:mt-16 rounded-xl	shadow-2xl"
         />
       </div>
       <Footer />

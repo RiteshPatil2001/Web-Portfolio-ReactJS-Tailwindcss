@@ -22,7 +22,10 @@ const Projects = () => {
   }, [navigate]);
 
   const FlyEaseProject = () => {
-    window.open("https://github.com/RiteshPatil2001", "_blank");
+    window.open(
+      "https://github.com/RiteshPatil2001/Flight-Ticket-Booking-System-Using-Java",
+      "_blank"
+    );
   };
   const WeatherForecasting = () => {
     window.open(
@@ -39,88 +42,51 @@ const Projects = () => {
   return (
     <>
       <Header />
-      <div className="w-full phone:p-4 phone:pt-8 tablet:p-12 laptop:p-16 desktop:p-16 text-white">
-        <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-white font-sans mb-16">
-          My Recent <label className="text-[gold]">Works</label>
+      <div className="w-full phone:p-4 phone:pt-8 tablet:p-12 laptop:p-16 desktop:p-16 desktop:pt-40 laptop:pt-40 tablet:pt-32 text-black">
+        <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl	text-[#056583] font-sans phone:mt-16 laptop:mb-12 desktop:mb-12">
+          My Recent <label className="text-[#b73535]">Projects</label>
         </h1>
-        <ProjectCard
-          src={JavaProject}
-          alt="Java Project pic"
-          projectTitle="FlyEase - Web-based Flight Ticket Booking Application"
-          projectdesc="FlyEase, a web-based flight ticket booking application developed
-              using the Spring Boot MVC framework. The application enables users
-              to search for flights, access flight details, and make online
-              bookings. It also consists of admin section for managing flights
-              and user details. Utilized the MySQL database to store and manage
-              flight-related information."
-          projecttech="Java, Spring MVC, JSP, JPA, MySQL"
-          onClick={FlyEaseProject}
-        />
-        <ProjectCard
-          src={ReactProject}
-          alt="React Project pic"
-          projectTitle="Expense Tracker System using React MERN Stack"
-          projectdesc="The Expense Tracker Application aims to provide a user-friendly
-              and efficient solution for managing income and expenses. This
-              application will allow users to add, update, and delete income and
-              expense transactions, as well as visualize their financial data
-              through various graphs and charts."
-          projecttech="React, MongoDB, Node JS, Express, CSS"
-          onClick={ExpenseTracker}
-        />
-        <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
-          <img
-            src={PythonProject}
-            alt="Java Project pic"
-            className="laptop:w-[210%] laptop:h-[320px] desktop:w-[210%] desktop:h-[320px] phone:h-[220px] tablet:h-[420px] tablet:w-[150%] phone:w-full tablet:"
+
+        <section id="cd-timeline" className="cd-container">
+          <ProjectCard
+            img={true}
+            src={JavaProject}
+            alt=""
+            title="FlyEase - Flight Ticket Booking Web Application"
+            description="FlyEase, a web-based flight ticket booking application developed using the Spring Boot MVC framework. The application enables users to search for flights, access flight details, and make online bookings. It also consists of admin section for managing flights and user details. Utilized the MySQL database to store and manage flight-related information."
+            technologies="Java, Spring MVC, JSP, JPA, MySQL"
+            button={true}
+            onClick={FlyEaseProject}
           />
-          <div className="p-4">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-serif">
-              Weather Forecasting App
-            </label>
-            <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
-              This Weather App is a simple Python application built using the
-              Tkinter library for the GUI, and it utilizes the OpenWeatherMap
-              API to fetch real-time weather data. The app displays current
-              weather information, including temperature, weather condition,
-              humidity, wind speed, and more. It also allows users to view past
-              5 days' weather records for a specific location.
-            </label>
-            <label className="phone:pt-3 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:pl-1 tablet:pl-2 laptop:pl-4 desktop:pl-4  font-sans phone:mb-3 tablet:mb-3 ">
-              <label className="text-[gold]">
-                <b>Technology Used -</b>{" "}
-              </label>{" "}
-              Python, MySQL, OpenWeatherMap API
-            </label>
-            <br></br>
-            <label
-              className="border-2 border-[gold] text-[gold] bg-black phone:text-sm phone:p-2 tablet:p-2 laptop:p-3 desktop:p-3 float-right rounded-lg cursor-pointer hover:scale-90 active:scale-100 phone:mb-3 tablet:mb-3"
-              onClick={WeatherForecasting}
-            >
-              GitHub Link
-            </label>
-          </div>
-        </div>
-        <div className="laptop:flex desktop:flex align-horizontal w-full h-fit rounded-lg bg-[#9ee4d918] overflow-hidden mb-24">
-          <div className="p-8">
-            <label className="border-b-2 border-[gold] phone:text-lg tablet:text-xl laptop:text-2xl desktop:text-2xl font-serif">
-              Travel Blog Website - rpdiary.com (Self-Learning)
-            </label>
-            <label className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:text-sm tablet:text-base font-sans text-justify laptop:text-lg desktop:text-lg ">
-              Created a website named Rpdiary.com (Travelling Blog) using
-              WordPress dashboard and hosting it for one year. Perform SEO
-              (Search Engine Optimisation) implementation and apply advertising
-              to the website by Infolinks and Google ad-sense.
-            </label>
-            <label className="phone:pt-3 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:pl-1 tablet:pl-2 laptop:pl-4 desktop:pl-4  font-sans phone:mb-3 tablet:mb-3 ">
-              <label className="text-[gold]">
-                <b>Technology Used -</b>{" "}
-              </label>{" "}
-              WordPress, Yoast SEO, rankMath, Google Adsense
-            </label>
-            <br></br>
-          </div>
-        </div>
+
+          <ProjectCard
+            img={true}
+            src={ReactProject}
+            alt=""
+            title="Expense Tracker System using React MERN Stack"
+            description="The Expense Tracker Application aims to provide a user-friendly and efficient solution for managing income and expenses. This application will allow users to add, update, and delete income and expense transactions, as well as visualize their financial data through various graphs and charts."
+            technologies="React, MongoDB, Node JS, Express, CSS"
+            button={true}
+            onClick={ExpenseTracker}
+          />
+
+          <ProjectCard
+            img={true}
+            src={PythonProject}
+            alt=""
+            title="Weather Forecasting App"
+            description="This Weather App is a simple Python application built using the Tkinter library for the GUI, and it utilizes the OpenWeatherMap API to fetch real-time weather data. The app displays current weather information, including temperature, weather condition, humidity, wind speed, and more. It also allows users to view past 5 days' weather records for a specific location."
+            technologies="Python, MySQL, OpenWeatherMap API"
+            button={true}
+            onClick={WeatherForecasting}
+          />
+
+          <ProjectCard
+            title="Travel Blog Website - rpdiary.com (WordPress)"
+            description="Created a website named Rpdiary.com (Travelling Blog) using WordPress dashboard and hosting it for one year. Perform SEO (Search Engine Optimisation) implementation and apply advertising to the website by Infolinks and Google ad-sense."
+            technologies="WordPress, Yoast SEO, rankMath, Google Adsense"
+          />
+        </section>
       </div>
       <Footer />
     </>
