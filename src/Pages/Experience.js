@@ -23,7 +23,7 @@ const Experiance = () => {
       <Header />
       <div className="w-full phone:p-4 phone:pt-8 tablet:p-12 laptop:p-16 desktop:p-16 desktop:pt-40 laptop:pt-40 tablet:pt-32 text-black">
         <h1 className="text-center font-bold uppercase phone:text-xl tablet:text-4xl laptop:text-5xl desktop:text-5xl text-[#056583] font-sans phone:mt-16 phone:mb-8 laptop:mb-12 desktop:mb-12">
-          professional <label className="text-[#b73535]">Experiance</label>
+          professional <label className="text-[#b73535]">Experience</label>
         </h1>
 
         <ExperienceCard

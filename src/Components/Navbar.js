@@ -150,7 +150,7 @@ const Navbar = () => {
                     >
                       <div className="py-1 bg-white rounded-md shadow-xs">
                         <Link
-                          to="/experiance"
+                          to="/experience"
                           className="flex flex-row items-center px-4 py-2 text-lg no-underline text-gray-700 focus:text-gray-900 hover:text-gray-900 focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
                           style={{ color: getNavbarTextColor() }}
                         >
@@ -268,7 +268,7 @@ const Navbar = () => {
                   onClick={handleExperienceClick}
                 >
                   <Link
-                    to="/experiance"
+                    to="/experience"
                     className="flex flex-row items-center px-3 py-2 text-lg no-underline font-medium rounded-md focus:outline-none transition-colors duration-500 ease-in-out"
                     style={{ color: getNavbarTextColor() }}
                     role="menuitem"

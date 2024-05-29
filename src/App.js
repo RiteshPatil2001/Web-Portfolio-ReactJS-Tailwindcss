@@ -4,7 +4,7 @@ import Projects from "./Pages/Projects";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";
 import Certificates from "./Pages/Certificates";
-import Experinace from "./Pages/Experiance";
+import Experinace from "./Pages/Experience";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/certificates" element={<Certificates />} />
-        <Route path="/experiance" element={<Experinace />} />
+        <Route path="/experience" element={<Experinace />} />
       </Routes>
     </Router>
   );
