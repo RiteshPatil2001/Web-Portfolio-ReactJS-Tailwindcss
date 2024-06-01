@@ -78,7 +78,7 @@ const Index = () => {
             <img
               src={ritesh}
               alt=""
-              className="desktop:w-4/12 laptop:w-4/12 cursor-pointer"
+              className="desktop:w-4/12 laptop:w-4/12"
             ></img>
             <div className="font-poppins text-black pt-8 pr-8 pl-8 pb-3 text-xl phone:text-lg phone:leading-7 tablet:text-lg tablet:leading-7 font-medium leading-[2rem] text-justify">
               {/* <p><span className="text-[#056583] font-semibold">A Small Introduction</span></p> */}
