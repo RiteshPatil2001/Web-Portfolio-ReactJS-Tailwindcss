@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ResumePNG from "../Assests/Resumepng.jpg";
+import ResumePNG from "../Assests/Resume_Png.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";

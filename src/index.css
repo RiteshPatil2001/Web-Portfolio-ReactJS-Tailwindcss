@@ -418,7 +418,6 @@ code {
 .Stars {
   --percent: calc(var(--rating) / 5 * 100%);
   display: inline-block;
-  font-size: 30px;
   font-family: Times;
   line-height: 1;
 }
