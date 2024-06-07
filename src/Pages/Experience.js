@@ -44,16 +44,22 @@ const Experiance = () => {
           </p>
           <p className="phone:p-2 tablet:p-3 laptop:p-4 desktop:p-4 font-medium phone:text-sm tablet:text-base text-justify laptop:text-lg desktop:text-lg">
             I bring a fresh perspective and a strong foundation in{" "}
-            <text className="text-[#056583] underline font-bold"> frontend/backend development and data science,</text> coupled with a
-            proactive attitude and a proven ability to quickly adapt to new
-            environments. My academic projects and internships have honed my
-            problem-solving abilities and teamwork skills, making me a reliable
-            and collaborative team member. I am enthusiastic, dedicated, and
-            ready to contribute to your company's success from day one. My
-            passion for <text className="text-[#056583] underline font-bold">Java Developer, Frontend development, Backend developer,
-            React Developer or Data analyst</text> and my drive to excel make me an
-            ideal candidate for this position.
-          </p>   
+            <text className="text-[#056583] underline font-bold">
+              {" "}
+              frontend/backend development and data science,
+            </text>{" "}
+            coupled with a proactive attitude and a proven ability to quickly
+            adapt to new environments. My academic projects and internships have
+            honed my problem-solving abilities and teamwork skills, making me a
+            reliable and collaborative team member. I am enthusiastic,
+            dedicated, and ready to contribute to your company's success from
+            day one. My passion for{" "}
+            <text className="text-[#056583] underline font-bold">
+              Java Developer, Frontend development, Backend developer, React
+              Developer or Data analyst
+            </text>{" "}
+            and my drive to excel make me an ideal candidate for this position.
+          </p>
         </div>
       </div>
       <Footer className="absolute bottom-0" />
