@@ -19,12 +19,12 @@ const Footer = () => {
     window.location.href = mailtoLink;
   };
   return (
-    <div className="flex flex-wrap justify-evenly text-white bg-black pb-3 pt-3">
+    <div className="flex flex-wrap justify-evenly text-white bg-black pb-3 pt-3 phone:flex-col phone:justify-center phone:align-middle phone:items-center">
       <div>
         <label>Designed and Developed by Ritesh Patil</label>
       </div>
       <div>
-        <label>Copyright © 2024 Ritesh Patil</label>
+        <label>Copyright © 2026 Ritesh Patil</label>
       </div>
       <div className="grid grid-cols-3 gap-x-20 phone:gap-x-10 tablet:gap-x-10 phone:mt-2">
         <div onClick={LinkedinClick}>

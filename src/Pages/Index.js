@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import ritesh from "../Assests/Ritesh.jpg";
 import Github from "../Assests/Github.png";
 import Linkedin from "../Assests/Linkedin.png";
@@ -74,42 +74,44 @@ const Index = () => {
         </div>
 
         <div className="flex w-full pt-24 phone:pt-8 tablet:pt-16 justify-center">
-          <div className="w-[95%] h-fit bg-white rounded-xl overflow-hidden shadow-lg flex desktop:flex-row laptop:flex-row tablet:flex-row phone:flex-col">
+          <div className="w-[95%] h-fi rounded-xl overflow-hidden flex desktop:flex-row laptop:flex-row tablet:flex-row phone:flex-col">
             <img
               src={ritesh}
               alt=""
-              className="desktop:w-4/12 laptop:w-4/12"
+              className="w-96 h-96 rounded-[50%] align-middle self-center justify-center"
             ></img>
-            <div className="font-poppins text-black pt-8 pr-8 pl-8 pb-3 text-xl phone:text-lg phone:leading-7 tablet:text-lg tablet:leading-7 font-medium leading-[2rem] text-justify">
-              {/* <p><span className="text-[#056583] font-semibold">A Small Introduction</span></p> */}
+            <div className="font-poppins text-black pt-8 pr-8 pl-8 pb-3 text-lg phone:text-lg phone:leading-7 tablet:text-lg tablet:leading-7 font-medium leading-[2rem] text-justify">
               <p>
-                Passionate developer with a keen eye for detail and a love for
-                creating seamless and innovative solutions. I am dedicated to
-                delivering high-quality code and collaborating with
-                cross-functional teams to turn ideas into reality.
+                Software Developer with{" "}
+                <span className="text-[#b73535] font-semibold">
+                  1.6+ years of experience
+                </span>{" "}
+                in designing and developing scalable web applications, with
+                proficiency across both frontend and backend technologies.
               </p>
               <p>
-                I have developed proficiency in programming languages such as{" "}
+                I specialize in crafting clean, efficient code and delivering
+                intuitive user experiences using{" "}
                 <span className="text-[#b73535] font-semibold">
-                  Java, ReactJs, Python, Spring Boot, MERN stack, TailwindCSS
-                  and many more
-                </span>{" "}
-                along with hands-on experience with it.
+                  Angular, Java, Spring Boot, Python, React.js, MERN and Many
+                  more.
+                </span>
               </p>
-
               <p>
+                My analytical approach and interest in{" "}
                 <span className="text-[#b73535] font-semibold">
-                  Data analysis and machine learning
+                  Data Analysis and Basic Machine Learning
                 </span>{" "}
-                are my additional areas of interest.
+                support well-informed architectural and development decisions.
               </p>
-
               <p>
-                Whenever I can, I incorporate my passion for{" "}
+                Beyond work, I balance creativity and discipline through my
+                passion for{" "}
                 <span className="text-[#b73535] font-semibold">
-                  cricket and swimming
+                  Cricket and Swimming—qualities
                 </span>{" "}
-                which helps me stay physically active.
+                that reflect in my collaborative mindset and commitment to
+                excellence.
               </p>
             </div>
           </div>

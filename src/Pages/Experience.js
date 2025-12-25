@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
-// import pic1 from "../Assests/Homee.png";
-// import ExperienceCard from "../Components/ExperienceCard";
+import pic1 from "../Assests/Homee.png";
+import ExperienceCard from "../Components/ExperienceCard";
 
 const Experiance = () => {
   const navigate = useNavigate();
@@ -26,41 +26,19 @@ const Experiance = () => {
           professional <label className="text-[#b73535]">Experience</label>
         </h1>
 
-        {/* <ExperienceCard
+        <ExperienceCard
           index={1}
-          companyName="W.E. Matter"
-          role="Full Stack Developer Intern"
-          duration="Ongoing"
+          companyName="CitiusTech Healthcare Solutions"
+          role="Software Engineer"
+          duration="June 2024 - Ongoing"
           responsibilities={[
-            "Engineered full stack web applications using React for the user interface and Node for the back end, leading the development of web APIs to integrate data seamlessly.",
-            "Redesigned both backend and frontend of the company’s website, enhancing user interface and experience, making it 100% responsive and user-friendly.",
+            "Developing and enhancing Angular components and RESTful integrations for a U.S.-based medical imaging application supporting DICOM, MR, CT, and other scan types.",
+            "Collaborating with product teams to implement features that improve diagnostic workflow efficiency and visualization capabilities for radiology studies.",
+            "Conducting code reviews, resolving defects, and optimizing UI performance to ensure reliability and seamless handling of large medical image datasets.",
+            "Previously assisted in quality validation with light Playwright automation and manual testing to maintain accuracy, compliance, and application stability",
           ]}
           image={pic1}
-        /> */}
-
-        <div className="expcard w-full h-fit rounded-xl shadow-xl p-[1.5em] mb-10">
-          <p className="phone:pt-2 tablet:pt-3 laptop:pt-4 desktop:pt-4 phone:px-2 tablet:px-3 laptop:px-4 desktop:px-4 text-justify phone:text-xl tablet:text-2xl laptop:text-3xl desktop:text-3xl font-bold m-0 text-[#b73535]">
-            Well!!! Currenly I dont have any professional experiance but....
-          </p>
-          <p className="phone:p-2 tablet:p-3 laptop:p-4 desktop:p-4 font-medium phone:text-sm tablet:text-base text-justify laptop:text-lg desktop:text-lg">
-            I bring a fresh perspective and a strong foundation in{" "}
-            <text className="text-[#056583] underline font-bold">
-              {" "}
-              frontend/backend development and data science,
-            </text>{" "}
-            coupled with a proactive attitude and a proven ability to quickly
-            adapt to new environments. My academic projects and internships have
-            honed my problem-solving abilities and teamwork skills, making me a
-            reliable and collaborative team member. I am enthusiastic,
-            dedicated, and ready to contribute to your company's success from
-            day one. My passion for{" "}
-            <text className="text-[#056583] underline font-bold">
-              Java Developer, Frontend development, Backend developer, React
-              Developer or Data analyst
-            </text>{" "}
-            and my drive to excel make me an ideal candidate for this position.
-          </p>
-        </div>
+        />
       </div>
       <Footer className="absolute bottom-0" />
     </div>

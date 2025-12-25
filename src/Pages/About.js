@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import SkillCard from "../Components/SkillCard";
 import Java from "../Assests/Java.png";
 import CPP from "../Assests/CPP.png";
@@ -11,7 +11,6 @@ import Git from "../Assests/Git.png";
 import SEO from "../Assests/SEO.png";
 import Postman from "../Assests/Postman.png";
 import PowerBI from "../Assests/PowerBI.png";
-import Tableau from "../Assests/Tableau.png";
 import Selenium from "../Assests/Selenium.png";
 import Jira from "../Assests/Jira.png";
 import JMeter from "../Assests/JMeter.png";
@@ -26,6 +25,8 @@ import GoogleAds from "../Assests/google-ads.png";
 import JavaScript from "../Assests/javascript.png";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import AngularJs from '../Assests/Angular.svg'
+import PlayWright from '../Assests/Playwright.svg'
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -113,14 +114,15 @@ const About = () => {
           Click on the card to see proficiency in that skill
         </h6>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
-          <SkillCard src={Java} alt="Java Logo" label="Java" rating={5} />
+          <SkillCard src={Java} alt="Java Logo" label="Java" rating={4.5} />
+          <SkillCard src={AngularJs} alt='Agular logo' label="Angular" rating={4.5} />
           <SkillCard src={SpringBoot} alt="SpringBoot Logo" label="Spring Boot" rating={4.5} />
-          <SkillCard src={Python} alt="Python Logo" label="Python" rating={4.5} />
-          <SkillCard src={CSharp} alt="CSharp Logo" label="C#" rating={4.2} />
-          <SkillCard src={CPP} alt="CPP Logo" label="C++" rating={3.5} />
-          <SkillCard src={MySQL} alt="MySQL Logo" label="MySQL" rating={4.5} />
+          <SkillCard src={Python} alt="Python Logo" label="Python" rating={4} />
+          <SkillCard src={CSharp} alt="CSharp Logo" label="C#" rating={4} />
+          <SkillCard src={CPP} alt="CPP Logo" label="C++" rating={3} />
+          <SkillCard src={MySQL} alt="MySQL Logo" label="MySQL" rating={4} />
           <SkillCard src={ReactL} alt="React Logo" label="ReactJS" rating={4} />
-          <SkillCard src={Node} alt="Node Logo" label="NodeJS" rating={3.5} />
+          <SkillCard src={Node} alt="Node Logo" label="NodeJS" rating={3} />
           <SkillCard src={HTML} alt="HTML Logo" label="HTML" rating={4} />
           <SkillCard src={CSS} alt="CSS Logo" label="CSS" rating={4.5} />
           <SkillCard src={Tailwind} alt="Tailwind Logo" label="Tailwind CSS" rating={4.5} />
@@ -130,16 +132,22 @@ const About = () => {
         </div>
         <h2 className="pt-32 text-center text-black font-bold">Tools I Used</h2>
         <h6 className="text-center pb-8 text-[#b73535]">
-          Click on the card to see proficiency in that tool
+          <span className="phone:block tablet:block desktop:hidden laptop:hidden">
+            Tap on the card to see proficiency
+          </span>
+          <span className="phone:hidden tablet:hidden desktop:block laptop:block">
+            Hover over card to see proficiency
+          </span>
         </h6>
+
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-8">
           <SkillCard src={Postman} alt="Tableau Logo" label="Postman" rating={4} />
+          <SkillCard src={Jira} alt="Jira Logo" label="Jira" rating={3} />
+          <SkillCard src={Selenium} alt="Selenium Logo" label="Selenium" rating={3} />
+          <SkillCard src={PlayWright} alt="PlayWright Logo" label="PlayWright" rating={3.5} />
           <SkillCard src={PowerBI} alt="PowerBI Logo" label="PowerBI" rating={3} />
-          <SkillCard src={Tableau} alt="Tableau Logo" label="Tableau" rating={3} />
           <SkillCard src={Wordpress} alt="Wordpress Logo" label="Wordpress" rating={3.5} />
           <SkillCard src={GoogleAds} alt="Google Ads Logo" label="Google Ads" rating={4} />
-          <SkillCard src={Selenium} alt="Selenium Logo" label="Selenium" rating={3} />
-          <SkillCard src={Jira} alt="Jira Logo" label="Jira" rating={3} />
           <SkillCard src={JMeter} alt="JMeter Logo" label="JMeter" rating={3} />
           <SkillCard src={VisualStudio} alt="VisualStudio Logo" label="VisualStudio" rating={4.5} />
           <SkillCard src={MySQLWorkbench} alt="MySQLWorkbench Logo" label="Workbench" rating={4.5} />

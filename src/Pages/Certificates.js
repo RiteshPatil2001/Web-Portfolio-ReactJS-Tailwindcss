@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import IBMPython from "../Assests/IBMPython.png";
 import OracleCertificate from "../Assests/OracleCertificate.png";
 import GoogleCertificate from "../Assests/GoogleCertificate.jpg";
+import MLCertificate from "../Assests/MLCertificate.png";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import CertificateCard from "../Components/CertificateCard";
@@ -62,10 +63,16 @@ const Certificates = () => {
         </h1>
         <section id="cd-timeline" className="cd-container">
           <CertificateCard
+            src={MLCertificate}
+            alt=""
+            title="Data science & Analytics with AI"
+            date="May 2024"
+          />
+          <CertificateCard
             src={OracleCertificate}
             alt=""
             title="Oracle Cloud Infrastructure 2023"
-            date="September 2023 - Upto September 2025"
+            date="September 2023 - September 2025"
           />
           <CertificateCard
             src={IBMPython}
@@ -78,12 +85,6 @@ const Certificates = () => {
             alt=""
             title="Google Digital Unlocked - The Fundametal Of Digital Marketing"
             date="October 2019"
-          />
-          <CertificateCard
-            src={OracleCertificate}
-            alt=""
-            title="Oracle Cloud Infrastructure 2023"
-            date="September 2023"
           />
         </section>
       </div>

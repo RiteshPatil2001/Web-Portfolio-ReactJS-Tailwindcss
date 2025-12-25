@@ -1,11 +1,13 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ResumePNG from "../Assests/Resume_Png.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Document, Page, pdfjs } from "react-pdf";
 import Header from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
   const navigate = useNavigate();
@@ -43,11 +45,20 @@ const Resume = () => {
           />
         </label>
 
-        <img
-          src={ResumePNG}
-          alt="Resume pic"
-          className="w-full phone:mt-8 tablet:mt-16 desktop:mt-16 laptop:mt-16 rounded-xl	shadow-2xl"
-        />
+        <Document
+          file="/Ritesh_Patil_Resume.pdf"
+          className="flex flex-col items-center mt-10"
+        >
+          {[1, 2].map((page) => (
+            <Page
+              pageNumber={page}
+              width={Math.min(window.innerWidth * 0.9, 900)}
+              className="bg-white shadow-2xl rounded-xl mb-4"
+              renderTextLayer={false}
+              renderAnnotationLayer={false}
+            />
+          ))}
+        </Document>
       </div>
       <Footer />
     </>

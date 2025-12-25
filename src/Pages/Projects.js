@@ -49,9 +49,15 @@ const Projects = () => {
 
         <section id="cd-timeline" className="cd-container">
           <ProjectCard
+            title="Hotel Management System (In-Progress)"
+            description=" Developing a hotel management web application enabling room booking, customer registration, and reservation tracking with real-time availability updates. Implemented role-based access and secure authentication to streamline admin operations such as room status, billing, and check-in/check-out management. Designed a user-friendly interface to digitalize hotel workflows and reduce manual tasks. Implemented database operations for room, billing, and customer data handling."
+            technologies="Angular, Java, Spring Boot MVC, MySQL"
+          />
+
+          <ProjectCard
             img={true}
             src={JavaProject}
-            alt=""
+            alt="flyease image"
             title="FlyEase - Flight Ticket Booking Web Application"
             description="FlyEase, a web-based flight ticket booking application developed using the Spring Boot MVC framework. The application enables users to search for flights, access flight details, and make online bookings. It also consists of admin section for managing flights and user details. Utilized the MySQL database to store and manage flight-related information."
             technologies="Java, Spring MVC, JSP, JPA, MySQL"
@@ -62,7 +68,7 @@ const Projects = () => {
           <ProjectCard
             img={true}
             src={ReactProject}
-            alt=""
+            alt="expense tracker image"
             title="Expense Tracker System using React MERN Stack"
             description="The Expense Tracker Application aims to provide a user-friendly and efficient solution for managing income and expenses. This application will allow users to add, update, and delete income and expense transactions, as well as visualize their financial data through various graphs and charts."
             technologies="React, MongoDB, Node JS, Express, CSS"
@@ -73,7 +79,7 @@ const Projects = () => {
           <ProjectCard
             img={true}
             src={PythonProject}
-            alt=""
+            alt="weather app image"
             title="Weather Forecasting App"
             description="This Weather App is a simple Python application built using the Tkinter library for the GUI, and it utilizes the OpenWeatherMap API to fetch real-time weather data. The app displays current weather information, including temperature, weather condition, humidity, wind speed, and more. It also allows users to view past 5 days' weather records for a specific location."
             technologies="Python, MySQL, OpenWeatherMap API"

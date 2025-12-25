@@ -279,13 +279,7 @@ code {
 .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
-}
-.cd-timeline-content .cd-date {
   display: inline-block;
-}
-
-.cd-timeline-content .cd-date {
-  float: left;
   padding: 0.8em 0;
   opacity: 0.7;
 }
@@ -404,6 +398,9 @@ code {
     float: none;
     margin: 0 auto;
     padding: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .cd-timeline-content label {
     display: block;
