@@ -4,7 +4,7 @@ Welcome to my personal web portfolio built with React.js and Tailwind CSS. This 
 
 ## Usage
 
-Simply visit [ritesh-patil](https://ritesh-patil.netlify.app/) to explore my portfolio. Feel free to navigate through the different sections, download my resume, and connect with me via the provided social media links or the contact form.
+Simply visit [ritesh-patil](https://riteshpatilportfolio.netlify.app/) to explore my portfolio. Feel free to navigate through the different sections, download my resume, and connect with me via the provided social media links or the contact form.
 
 ## Features
 
